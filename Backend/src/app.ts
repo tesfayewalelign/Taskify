@@ -6,7 +6,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://taskify-pro-snowy.vercel.app"],
+    origin: ["https://taskify-pro-snowy.vercel.app"],
     credentials: true,
   })
 );
