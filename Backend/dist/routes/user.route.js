@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const authController_1 = require("../controllers/authController");
+const authController_2 = require("../controllers/authController");
+const taskController_1 = require("../controllers/taskController");
+const user_validation_1 = require("../validation/user.validation");
+const taskController_2 = require("../controllers/taskController");
+const taskController_3 = require("../controllers/taskController");
+const express_2 = __importDefault(require("express"));
+const router = (0, express_1.Router)();
+const app = (0, express_2.default)();
+app.use(express_2.default.json());
+router.post("/signup", authController_1.signup);
+router.post("/login", authController_2.login);
+router.post("/task", user_validation_1.authenticate, taskController_1.createTask);
+router.get("/tasks", user_validation_1.authenticate, taskController_2.getTasks);
+router.delete("/tasks/:id", user_validation_1.authenticate, taskController_3.deleteTask);
+exports.default = router;
