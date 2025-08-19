@@ -4,9 +4,14 @@ import cors from "cors";
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://taskify-pro-snowy.vercel.app",
+];
+
 app.use(
   cors({
-    origin: ["https://taskify-pro-snowy.vercel.app"],
+    origin: allowedOrigins,
     credentials: true,
   })
 );
