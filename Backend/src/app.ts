@@ -5,7 +5,12 @@ import cors from "cors";
 const app = express();
 const PORT = process.env.PORT ? Number(process.env.PORT) : 5000;
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(
+  cors({
+    origin: "https://taskify-app-gamma-lemon.vercel.app/signup",
+    credentials: true,
+  })
+);
 
 app.use(cors());
 

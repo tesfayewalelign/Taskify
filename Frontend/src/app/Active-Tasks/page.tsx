@@ -23,7 +23,7 @@ export default function ActiveTasksPage() {
     if (!token) return;
 
     try {
-      const res = await fetch(`${API_BASE}/tasks/${id}`, {
+      const res = await fetch(`${API_BASE}/api/tasks/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

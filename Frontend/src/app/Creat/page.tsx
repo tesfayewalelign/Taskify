@@ -21,7 +21,7 @@ export default function AddPage() {
     try {
       const API_BASE =
         process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000";
-      const url = `${API_BASE}/task`;
+      const url = `${API_BASE}/api/task`;
 
       console.log("Creating task:", taskName, "POST ->", url);
 
