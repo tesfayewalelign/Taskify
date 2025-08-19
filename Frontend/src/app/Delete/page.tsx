@@ -1,5 +1,6 @@
 "use client";
 import { FaSearch } from "react-icons/fa";
+import Image from "next/image";
 
 export default function DeleteTask() {
   return (
@@ -16,7 +17,7 @@ export default function DeleteTask() {
         <div className="flex items-center gap-6 md:gap-[30px]">
           <p className="text-[16px] font-semibold text-black">Selam Girma</p>
           <button className="w-[24px] h-[24px]">
-            <img src="/signout.svg" alt="Sign Out" />
+            <Image src="/signout.svg" alt="Sign Out" />
           </button>
         </div>
       </div>

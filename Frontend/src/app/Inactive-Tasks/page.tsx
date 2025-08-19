@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FaSearch, FaTrash, FaChevronDown } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const initialTasks = [
   {
@@ -89,7 +90,7 @@ export default function InactiveTask() {
         <div className="flex items-center gap-6 md:gap-[30px]">
           <p className="text-[16px] font-semibold text-black">Selam Girma</p>
           <button className="w-[24px] h-[24px]">
-            <img src="/signout.svg" alt="Sign Out" />
+            <Image src="/signout.svg" alt="Sign Out" />
           </button>
         </div>
       </div>

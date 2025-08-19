@@ -60,7 +60,7 @@ export default function SignupForm() {
       <div
         className="
         flex justify-center items-center h-full  w-full
-        bg-[url(https://c.animaapp.com/md3i41oxgVsZYm/img/31-list-of-wallpaper-computer-light-blue-1.png)]
+        bg-[url(https://c.animaapp.com/md3i41oxgVsZYm/Img/31-list-of-wallpaper-computer-light-blue-1.png)]
         bg-cover bg-center
         px-4 md:px-8 lg:px-12
       "

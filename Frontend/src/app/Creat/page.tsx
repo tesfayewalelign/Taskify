@@ -3,6 +3,7 @@
 import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function AddPage() {
   const router = useRouter();
@@ -101,7 +102,7 @@ export default function AddPage() {
         <div className="flex items-center gap-[30px]">
           <p className="text-[16px] font-semibold text-black">Selam Girma</p>
           <button className="w-[24px] h-[24px]">
-            <img src="/signout.svg" alt="Sign Out" />
+            <Image src="/signout.svg" alt="Sign Out" />
           </button>
         </div>
       </div>
